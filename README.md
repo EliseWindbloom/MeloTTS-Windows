@@ -58,6 +58,9 @@ melo-ui
 7. This will give you the local URL to view the tensorboard.
 ## Resuming Training
 1. From the conda prompt run `train.bat` again to resume the training. The training will resume from the newest G_XXXX.pth file.
+## Trimming Model
+You can trim your model to make it a way smaller filesize (which will make it load faster during the model loading process). When testing, this made the model filesize about 66% smaller. Note the created trimmed model is for inference-only(using the model just to generate audio from text) and you won't be able to train it further.
+1. Open `trim_model.bat` file in a text editor to change the directory of your G_XXXX.pth file and the save location, save the changes, then run `trim_model.bat` to create a trimmed model for inference only.
 
 # Original Readme:
 <div align="center">
