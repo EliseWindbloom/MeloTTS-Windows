@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 rem Specify input and output folders here
-set "INPUT_FOLDER=data\example\audios"
+set "INPUT_FOLDER=data\example\audio"
 set "OUTPUT_FOLDER=data\example\wavs"
 
 rem Create output folder if it doesn't exist
