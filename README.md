@@ -44,7 +44,7 @@ melo-ui
 7. Modify `config.json` to change the batch size, epochs, learning rate, etc.
   - ⚠️ **Important, If you plan to Resume Training Later:**
     - The `eval_interval` setting determines how frequently your model is saved during training
-    - For example, if `eval_interval=1000`, the model saves only once every 1000 epochs
+    - For example, if `eval_interval=1000`, the model saves only once every 1000 steps
     - If you stop training between save points, any progress since the last save will be lost
     - For safer training sessions that you may need to resume later, use a smaller `eval_interval` value
     - You can also adjust `n_ckpts_to_keep` to limit the max models kept (if `n_ckpts_to_keep=5`, it will delete the oldest models when their are more than 5 saved models)
