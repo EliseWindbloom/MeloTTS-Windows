@@ -149,12 +149,6 @@ def main(
     config["num_tones"] = num_tones
     config["symbols"] = symbols
 
-    # Added lines:
-    config["train"]["skip_optimizer"] = False  # Ensure skip_optimizer is False by default. Seems this must be false to be able to resume training later.
-    config["train"]["n_ckpts_to_keep"] = 5    # Add checkpoint keeping parameter
-    config["train"]["eval_interval"] = 200 # How often checkpoints are saved. Set default eval_interval to 200, removing this line will default it to 1000
-    config["train"]["batch_size"] = 12 # Set default batch_size to 12, removing this line will default it to 6
-
     with open(out_config_path, "w", encoding="utf-8") as f:
         json.dump(config, f, indent=2, ensure_ascii=False)
 
