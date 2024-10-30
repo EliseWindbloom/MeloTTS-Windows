@@ -28,7 +28,11 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 
 3. Prepare faster-whisper (optional for fast transcribing of audio files):
    - Download cuda/cublas here [https://github.com/Purfview/whisper-standalone-win/releases/download/libs/cuBLAS.and.cuDNN_CUDA11_win_v2.7z](https://github.com/Purfview/whisper-standalone-win/releases/download/libs/cuBLAS.and.cuDNN_CUDA11_win_v2.7z), extract and place the 5 dll files directly into the `MeloTTS-Windows/melo/` folder
-   - to prevent conflicts, run this from the conda window `pip install transformers==4.30.2 huggingface_hub==0.16.4`
+   - To install faster-whisper (and prevent conflicts with it) run this from the conda window:
+```
+pip install faster-whisper==0.9.0
+pip install transformers==4.30.2 huggingface_hub==0.16.4
+```
 
 4. Run using:
 ```
