@@ -1,3 +1,4 @@
+#this script requires you to use: pip install psutil GPUtil
 import os
 import time
 import psutil
